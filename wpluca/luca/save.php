@@ -1,5 +1,5 @@
  <?php
-	$con = mysqli_connect("localhost", "root", "", "dacs2018");
+	$con = mysqli_connect("172.18.1.143", "root", "", "luca");
 	if (isset($_POST ["email"]) && isset($_POST ["name"]) && isset($_POST ["password"])){
 		$sql = "insert into user (email, nome, senha) values (?, ?, ?)";
 		$stmt = mysqli_prepare($con, $sql);
