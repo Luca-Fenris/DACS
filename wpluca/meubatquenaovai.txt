@@ -1,0 +1,5 @@
+docker stop wpluca_wordpress_1
+docker rm wpluca_wordpress_1
+docker rmi luca:wordpress
+docker build -t luca:wordpress z:\wpluca
+docker-compose up -d
